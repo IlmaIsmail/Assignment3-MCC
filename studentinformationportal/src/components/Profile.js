@@ -1,10 +1,10 @@
-export default function portalrofile(props){
+export default function Profile(props){
     return(
         <>
         <table>
             <tr>
                 <td rowSpan={7}>
-                    <img className="profile" src={require("../assets/img/"+props.stu.profilePic)} alt="profile"/>
+                    <img className='profile' src={require('../assets/img/'+props.stu.profilePic)} alt="profile"/>
                 </td>
                 <td>ID {props.stu.studentId}</td>
             </tr>
