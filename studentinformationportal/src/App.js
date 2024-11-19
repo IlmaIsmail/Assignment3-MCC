@@ -1,9 +1,13 @@
  import './App.css';
+ import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      
+      <h1 align="center">Student Information portal</h1>
+      <hr/>
+      <Header></Header>
+      <hr/>
     </div>
   );
 }
