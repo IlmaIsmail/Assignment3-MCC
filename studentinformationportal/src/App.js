@@ -1,6 +1,5 @@
- import './App.css';
- import { students } from './data/StudentsDb';
- import Header from './components/Header';
+import './App.css';
+import { students } from './data/StudentsDb';
 import StudentTable from './components/StudentTable';
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
 
         </tbody>
         </table>
-      <Header></Header>
+      
       <hr/>
     </div>
   );
