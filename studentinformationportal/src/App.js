@@ -18,7 +18,7 @@ function App() {
         </tbody>
         </table>
       
-      <hr/>
+      
     </div>
   );
 }
