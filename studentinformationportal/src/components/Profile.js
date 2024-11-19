@@ -4,7 +4,7 @@ export default function portalrofile(props){
         <table>
             <tr>
                 <td rowSpan={7}>
-                    <img className="profile" src={require("../assets/img/"+props.stu.profilePic)} alt="profile picture"/>
+                    <img className="profile" src={require("../assets/img/"+props.stu.profilePic)} alt="profile"/>
                 </td>
                 <td>ID {props.stu.studentId}</td>
             </tr>
@@ -21,7 +21,7 @@ export default function portalrofile(props){
                 <td>Address: {props.stu.address.city + "," + props.stu.address.country}</td>
             </tr>
             <tr>
-                <td>Skills: {props.stu.skills.map(skill=>skills+=", ")}</td>
+                <td>Skills: {props.stu.skills.map(skill=>skill+=", ")}</td>
             </tr>
         </table>
         </>

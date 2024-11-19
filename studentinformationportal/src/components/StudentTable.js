@@ -1,6 +1,7 @@
 import '../assets/css/compo.css';
+import {useState} from "react";
 import Profile from "./Profile";
-import { useState} from "react";
+
 
 export default function StudentTable(props){
     const [stu,setStu]=useState(props.students[0]);
