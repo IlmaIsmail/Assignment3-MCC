@@ -4,7 +4,7 @@ export default function portalrofile(props){
         <table>
             <tr>
                 <td rowSpan={7}>
-                    <img className="profile" src={requestAnimationFrame("../assets/img/"+props.stu.profilePic)} alt="profile picture"/>
+                    <img className="profile" src={require("../assets/img/"+props.stu.profilePic)} alt="profile picture"/>
                 </td>
                 <td>ID {props.stu.studentId}</td>
             </tr>
