@@ -1,6 +1,7 @@
 import '../assets/css/compo.css';
-import {useState} from "react";
 import Profile from "./Profile";
+import {useState} from "react";
+
 
 
 export default function StudentTable(props){
@@ -19,20 +20,21 @@ export default function StudentTable(props){
                         </tr>
                     </thead>
                     <tbody>
-                        {
-                            props.students.map( student=>
-                                <tr>
-                                    <td>{student.firstName}</td>
-                                    <td>{student.lastName}</td>
-                                    <td>{student.course}</td>
-                                    <td>{student.address.country}</td> 
-                                    <td><button id={student.studentId} onClick={()=>{setStu(student)}}>View</button></td>
-                                </tr>
-                            )
+    {
+        props.students.map((student, index) => (
+            <tr key={index}>
+                <td>{student.firstName}</td>
+                <td>{student.lastName}</td>
+                <td>{student.course}</td>
+                <td>{student.address.country}</td>
+                <td>
+                    <button id={student.studentId} onClick={() => setStu(student)}>View</button>
+                </td>
+            </tr>
+        ))
+    }
+</tbody>
 
-                            
-                        }
-                    </tbody>
                 </table>
 
 
